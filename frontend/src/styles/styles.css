@@ -1,0 +1,212 @@
+body {
+  background-color: #ffeaa7;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
+}
+
+@media (max-width: 1200px) {
+  .container-row {
+    flex-direction: column;
+  }
+}
+
+.container-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container {
+  height: auto;
+  margin: 35px 70px;
+  width: 300px;
+  min-height: 400px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.heading h1 {
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  font-size: 1.5rem;
+}
+
+.todo {
+  background-color: #8bd1dd;
+}
+.in-progress {
+  background-color: #fdcb6e;
+}
+.done {
+  background-color: #9be797;
+}
+
+.form input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #fdcb6e;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+  color: hsla(260, 2%, 25%, 0.7);
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font-family: "Architects Daughter", cursive;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: #ffeaa7;
+}
+
+.add-button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid hsl(198, 1%, 29%);
+}
+
+.add-button span:hover {
+  background-color: #b0bec8;
+}
+
+.item-container {
+  background-color: white;
+  padding: 10px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.item-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.item-textarea {
+  width: 97%;
+  height: auto;
+  padding: 3px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  resize: none;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.item-date {
+  font-size: 12px;
+  color: grey;
+}
+
+.date-input {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 12px;
+  width: 95px;
+  height: 30px;
+}
+
+.item-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.item-button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.postpone-btn {
+  background-color: #8bd1dd;
+  color: white;
+}
+
+.take-btn {
+  background-color: #fdcb6e;
+  color: white;
+}
+
+.done-btn {
+  background-color: #9be797;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ef645d;
+  color: white;
+}
+
+.postpone-btn:hover {
+  background-color: #1da0b7;
+  color: white;
+}
+
+.take-btn:hover {
+  background-color: #e89e13;
+  color: white;
+}
+
+.done-btn:hover {
+  background-color: #19a912;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c21911;
+  color: white;
+}
